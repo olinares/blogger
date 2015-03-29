@@ -1,0 +1,13 @@
+<h3>Post a Comment</h3>
+
+<%= simple_form_for [ @article, @comment] do |f| %>
+  <p>
+    <%= f.input :author_name, label: 'Your Name', placeholder: 'Nickname' %>
+  </p>
+  <p>
+    <%= f.input :body, label: 'Your Comment', placeholder: 'Be nice or not!' %>
+  </p>
+  <p>
+    <%= f.button :submit %>
+  </p>
+<% end %>
